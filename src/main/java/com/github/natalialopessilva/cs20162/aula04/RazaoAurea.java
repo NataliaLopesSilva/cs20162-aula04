@@ -13,19 +13,13 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class RazaoAurea {
+public final class RazaoAurea {
 
     /**
-     * Construtor da classe.
+     * Construtor da classe RazaoAurea que impede que a mesma seja instanciada
+     * ou acessada.
      */
-    protected RazaoAurea() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setRazaoAurea() {
-        RazaoAurea razaoAurea = new RazaoAurea();
+    private RazaoAurea() {
     }
 
     /**
@@ -47,7 +41,10 @@ public class RazaoAurea {
                     + " x deve ser menor que y");
         }
 
-        int i = 1, t = 0, a = y, b = x;
+        int i = 1;
+        int t = 0;
+        int a = y;
+        int b = x;
 
         while (i <= k) {
             t = a;

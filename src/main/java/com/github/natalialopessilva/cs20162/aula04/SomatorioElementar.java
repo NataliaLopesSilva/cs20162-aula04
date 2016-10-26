@@ -13,19 +13,13 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class SomatorioElementar {
+public final class SomatorioElementar {
 
     /**
-     * Construtor da classe.
+     * Construtor da classe SomatorioElementar que impede que a mesma seja
+     * instanciada ou acessada.
      */
-    protected SomatorioElementar() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setSomatorioElementar() {
-        SomatorioElementar somatorioElementar = new SomatorioElementar();
+    private SomatorioElementar() {
     }
 
     /**
@@ -43,7 +37,9 @@ public class SomatorioElementar {
             throw new IllegalArgumentException("valor de n inválido");
         }
 
-        int i = 1, s = 0, d = 0;
+        int i = 1;
+        int s = 0;
+        int d = 0;
 
         do {
             d = 1 + (i * i);

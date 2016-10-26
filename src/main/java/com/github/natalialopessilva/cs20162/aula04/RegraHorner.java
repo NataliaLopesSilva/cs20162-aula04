@@ -13,19 +13,13 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class RegraHorner {
+public final class RegraHorner {
 
     /**
-     * Construtor da classe.
+     * Construtor da classe RegraHorner que impede que a mesma seja instanciada
+     * ou acessada.
      */
-    protected RegraHorner() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setRegraHorner() {
-        RegraHorner regraHorner = new RegraHorner();
+    private RegraHorner() {
     }
 
     /**
@@ -47,7 +41,8 @@ public class RegraHorner {
                     + "que um");
         }
 
-        int p = a[g], i = g - 1;
+        int p = a[g];
+        int i = g - 1;
 
         while (i >= 0) {
             p = p * x + a[i];

@@ -13,19 +13,13 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class RestoDivisaoInteira {
+public final class RestoDivisaoInteira {
 
     /**
-     * Construtor da classe.
+     * Construtor da classe RestoDivisaoInteira que impede que a mesma seja
+     * instanciada ou acessada.
      */
-    protected RestoDivisaoInteira() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setRestoDivisaoInteira() {
-        RestoDivisaoInteira restoDivisaoInteira = new RestoDivisaoInteira();
+    private RestoDivisaoInteira() {
     }
 
     /**

@@ -1,8 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-
-import com.github.natalialopessilva.cs20162.aula04.Fibonacci;
-import static com.github.natalialopessilva.cs20162.aula04.Fibonacci.setFibonacci;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,10 +18,5 @@ public class FibonacciTest {
     @Test
     public void resultadoEsperado2() {
         Assert.assertEquals(13, Fibonacci.fibonacci(7));
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setFibonacci();
     }
 }

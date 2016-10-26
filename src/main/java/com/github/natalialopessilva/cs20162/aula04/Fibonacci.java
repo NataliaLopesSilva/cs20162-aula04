@@ -13,25 +13,19 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class Fibonacci {
-
-    /**
-     * Construtor da classe.
-     */
-    protected Fibonacci() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setFibonacci() {
-        Fibonacci fibonacci = new Fibonacci();
-    }
+public final class Fibonacci {
 
     /**
      * Valor o qual o ontador inicia.
      */
     public static final int CONTADOR = 2;
+
+    /**
+     * Construtor da classe Fibonacci que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    private Fibonacci() {
+    }
 
     /**
      * Verifica qual é o n-ésimo número de Fibonacci.
@@ -48,13 +42,15 @@ public class Fibonacci {
                     + " zero");
         }
 
-        int a = 0, c = 1;
+        int a = 0;
+        int c = 1;
 
         if (n < CONTADOR) {
             return n;
         }
 
-        int t = 0, i = CONTADOR;
+        int t = 0;
+        int i = CONTADOR;
 
         while (i <= n) {
             t = c;

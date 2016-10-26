@@ -13,25 +13,19 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class RaizQuadrada {
-
-    /**
-     * Construtor da classe.
-     */
-    protected RaizQuadrada() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setRaizQuadrada() {
-        RaizQuadrada raizQuadrada = new RaizQuadrada();
-    }
+public final class RaizQuadrada {
 
     /**
      * Valor o qual o ontador inicia.
      */
     public static final int CONTADOR_DOIS = 2;
+
+    /**
+     * Construtor da classe RaizQuadrada que impede que a mesma seja instanciada
+     * ou acessada.
+     */
+    private RaizQuadrada() {
+    }
 
     /**
      * Verifica a raiz quadrada de um número.

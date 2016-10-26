@@ -1,8 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-
-import com.github.natalialopessilva.cs20162.aula04.QuadradoPerfeito;
-import static com.github.natalialopessilva.cs20162.aula04.QuadradoPerfeito.setQuadradoPerfeito;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,10 +18,5 @@ public class QuadradoPerfeitoTest {
     @Test
     public void resultadoEsperadoCorreto() {
         Assert.assertTrue(QuadradoPerfeito.quadradoPerfeito(4));
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setQuadradoPerfeito();
     }
 }

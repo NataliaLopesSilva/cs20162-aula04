@@ -13,20 +13,7 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class CalculaPi {
-
-    /**
-     * Construtor da classe.
-     */
-    protected CalculaPi() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setCalculaPi() {
-        CalculaPi calculaPi = new CalculaPi();
-    }
+public final class CalculaPi {
 
     /**
      * Número cujo valor é 2.
@@ -38,6 +25,13 @@ public class CalculaPi {
     public static final int NUM_QUATRO = 4;
 
     /**
+     * Construtor da classe CalculaPi que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    private CalculaPi() {
+    }
+
+    /**
      * Realiza Calculo de Pi.
      *
      * @param n O numero de entrada. Valor maior que 1.
@@ -46,19 +40,22 @@ public class CalculaPi {
      *
      * @throws IllegalArgumentException Se n for inválido (menor que 1).
      */
-    public static int calculaPi(final int n) {
+    public static double calculaPi(final int n) {
         if (n < 1) {
             throw new IllegalArgumentException("valor de n inválido");
         }
 
-        int i = 1, s = -1, d = -1, p = 0;
+        int i = 1;
+        int s = -1;
+        int d = -1;
+        double p = 0;
 
-        do {
+        while (i <= n) {
             d = d + NUM_DOIS;
             s = -1 * s;
-            p = (p + NUM_QUATRO * s) / d;
+            p = (double) (p + NUM_QUATRO * s / d);
             i++;
-        } while (i <= n);
+        }
 
         return p;
     }

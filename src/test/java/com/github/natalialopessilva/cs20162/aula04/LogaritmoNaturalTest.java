@@ -1,8 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-
-import com.github.natalialopessilva.cs20162.aula04.LogaritmoNatural;
-import static com.github.natalialopessilva.cs20162.aula04.LogaritmoNatural.setLogaritmoNatural;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,10 +18,5 @@ public class LogaritmoNaturalTest {
     @Test
     public void resultadoEsperado() {
         Assert.assertEquals(1, LogaritmoNatural.logaritimo(1, 2));
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setLogaritmoNatural();
     }
 }

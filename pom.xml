@@ -11,7 +11,6 @@
          Compila, executa testes e elabora relatório de cobertura.
 
          mvn exec:java -Dexec.mainClass="com.github.natalialopessilva.cs2016.aula04"
-         Executa o programa DiaSemana
     -->
 
     <groupId>com.github.NataliaLopesSilva</groupId>
@@ -46,7 +45,7 @@
 
     <developers>
         <developer>
-            <id>NataliLopesSilva</id>
+            <id>NataliaLopesSilva</id>
             <name>Natália Lopes da Silva</name>
             <email>natalialopescig@gmail.com</email>
             <organization>Instituto de Informática (UFG)</organization>

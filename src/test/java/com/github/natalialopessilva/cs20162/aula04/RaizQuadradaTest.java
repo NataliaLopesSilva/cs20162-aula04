@@ -1,8 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-
-import com.github.natalialopessilva.cs20162.aula04.RaizQuadrada;
-import static com.github.natalialopessilva.cs20162.aula04.RaizQuadrada.setRaizQuadrada;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,10 +13,5 @@ public class RaizQuadradaTest {
     @Test
     public void resultadoEsperado() {
         Assert.assertEquals(1.41d, RaizQuadrada.raizQuadrada(2, 3), 0.01d);
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setRaizQuadrada();
     }
 }

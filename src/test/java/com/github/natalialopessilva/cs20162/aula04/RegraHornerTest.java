@@ -1,7 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-import com.github.natalialopessilva.cs20162.aula04.RegraHorner;
-import static com.github.natalialopessilva.cs20162.aula04.RegraHorner.setRegraHorner;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,10 +15,5 @@ public class RegraHornerTest {
     public void resultadoEsperado() {
         int[] a = {4, 3, 2, 1};
         Assert.assertEquals(10, RegraHorner.regraHornerPolinomio(1, 3, a));
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setRegraHorner();
     }
 }

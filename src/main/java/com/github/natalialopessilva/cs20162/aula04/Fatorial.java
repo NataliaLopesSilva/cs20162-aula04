@@ -14,20 +14,7 @@ package com.github.natalialopessilva.cs20162.aula04;
  * 3, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class Fatorial {
-
-    /**
-     * Construtor da classe.
-     */
-    protected Fatorial() {
-    }
-
-    /**
-     * Acessa o construtor da Classe.
-     */
-    public static void setFatorial() {
-        Fatorial fatorial = new Fatorial();
-    }
+public final class Fatorial {
 
     /**
      * Valor o qual o ontador inicia.
@@ -35,9 +22,17 @@ public class Fatorial {
     public static final int CONTADOR = 2;
 
     /**
+     * Construtor da classe Fatorial que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    private Fatorial() {
+    }
+
+    /**
      * Verifica o fatorial de um número.
      *
-     * @param n O número de entrada. Valor maior 1.
+     * @param n O número de entrada, para calculo de seu fatorial. Valor maior
+     * 1.
      *
      * @return A entrada em fatorial.
      *
@@ -49,7 +44,8 @@ public class Fatorial {
                     + " que 1");
         }
 
-        int i = CONTADOR, f = 1;
+        int i = CONTADOR;
+        int f = 1;
 
         do {
             f = f * i;

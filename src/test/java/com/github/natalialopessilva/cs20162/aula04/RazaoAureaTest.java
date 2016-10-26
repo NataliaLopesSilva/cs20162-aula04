@@ -1,8 +1,5 @@
-package Testes;
+package com.github.natalialopessilva.cs20162.aula04;
 
-
-import com.github.natalialopessilva.cs20162.aula04.RazaoAurea;
-import static com.github.natalialopessilva.cs20162.aula04.RazaoAurea.setRazaoAurea;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -26,10 +23,5 @@ public class RazaoAureaTest {
     @Test
     public void resultadoEsperado() {
         Assert.assertEquals(1, RazaoAurea.calculaRazaoAurea(1, 2, 4));
-    }
-
-    @Test
-    public void cemPorCentoCobertura() {
-        setRazaoAurea();
     }
 }
